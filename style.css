@@ -35,6 +35,7 @@ html {
     --accent-1: hsl(14, 45%, 36%);
     --accent-2: hsl(332, 51%, 32%);
     --accent-3: hsl(330, 100%, 98%);
+    --accent-4: hsl(29, 53%, 90%);
 
   /* Estilos para el scrollbar */
     scrollbar-width: none;
@@ -173,7 +174,7 @@ p {
     display: flex;
     justify-content: space-around;
 
-    padding: 8px 0px 32px 0px;
+    padding: 16px 0px;
 }
 
 .macros {
@@ -192,4 +193,62 @@ p {
 
 .percentage li {
     margin-bottom: 24px;
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .image-container {
+    max-width: 768px;
+    }
+
+    .container {
+    max-width: 768px;
+    padding: 0px 24px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--accent-4);
+    }
+
+    main {
+        padding: 64px 0px;
+    }
+
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        max-width: 700px;
+
+        background-color: var(--accent-3);
+        border-radius: 16px 16px 0 0;
+    }
+
+    .hero-image {
+        width: 650px;
+
+        object-fit: contain;
+
+        margin: 24px 0px;
+        border-radius: 12px;
+    }
+
+    .main-title {
+        margin: 0 0 24px 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 700px;
+        padding: 0px 24px;
+        border-radius: 0 0 16px 16px;
+
+        background-color: var(--accent-3);
+    }
 }
