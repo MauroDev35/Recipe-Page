@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+html {
+  /* Escala tipografica */
+    font-size: 62.5%;
+
+  /* Familias tipograficas */
+    --font-1: "Outfit", sans-serif;
+    --font-2: "Young Serif", serif;
+
+  /* Variables tipograficas */
+    --text-caption: 1.2rem;
+    --text-base: 1.6rem;
+    --text-subtitle: 2rem;
+    --text-title: 2.6rem;
+    --text-jumbo: 3.2rem;
+
+  /* Colores */
+    --primary-1: hsl(0, 0%, 100%);
+    --secondary-1: hsl(30, 54%, 90%);
+    --secondary-2: hsl(30, 18%, 87%);
+    --secondary-3: hsl(30, 10%, 34%);
+    --secondary-4: hsl(24, 5%, 18%);
+
+    --accent-1: hsl(14, 45%, 36%);
+    --accent-2: hsl(332, 51%, 32%);
+    --accent-3: hsl(330, 100%, 98%);
+
+  /* Estilos para el scrollbar */
+    scrollbar-width: none;
+}
+
+body {
+    color: var(--secondary-3);
+    background-color: var(--accent-3);
+
+    font-family: var(--font-1);
+    font-size: var(--text-base);
+}
+
+hr {
+    border-color: var(--accent-3);
+    opacity: 40%;
+}
+
+.image-container {
+    max-width: 480px;
+}
+
+.hero-image {
+    width: 100%;
+
+    object-fit: contain;
+}
+
+.container {
+    max-width: 480px;
+    padding: 0px 24px;
+}
+
+.main-title {
+    margin: 24px 0px;
+
+    color: var(--secondary-4);
+    font-family: var(--font-2);
+    font-size: var(--text-jumbo);
+    font-weight: 400;
+    line-height: 32px;
+}
+
+p {
+    padding-bottom: 24px;
+
+    text-align: justify;
+}
+
+.subtitle {
+    margin: 32px 0px 12px 0px;
+    color: var(--accent-2);
+    font-size: var(--text-subtitle);
+    font-weight: 600;
+}
+
+.title {
+    margin: 32px 0px 16px 0px;
+
+    color: var(--accent-1);
+    font-family: var(--font-2);
+    font-size: var(--text-title);
+    font-weight: 400;
+}
+
+.preparation-container {
+    margin-left: 16px;
+    padding-bottom: 16px;
+}
+
+.preparation-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.preparation-items {
+    margin: 8px 0px;
+    padding-left: 8px;
+}
+
+.preparation-items::before {
+    content: "•"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: var(--accent-2); /* Or a color you prefer */
+    font-size: 20px;
+}
+
+.items-bold {
+    font-weight: 700;
+}
+
+.ingredients-list {
+    list-style: none;
+    padding: 0px 0px 32px 0px;
+    margin: 0;
+}
+
+.ingredients-items {
+    margin: 8px 0px;
+    padding-left: 8px;
+}
+
+.ingredients-items::before {
+    content: "•"; /* Insert content that looks like bullets */
+    padding-right: 24px;
+    color: var(--accent-1); /* Or a color you prefer */
+    font-size: 20px;
+}
+
+.numbered-list {
+    list-style: none;
+    padding: 0px 0px 32px 0px;
+    margin: 0;
+}
+
+.instructions-items {
+    margin: 8px 0px;
+    padding-left: 8px;
+
+    text-align: justify;
+}
+
+.numbers{
+    padding-right: 16px;
+    color: var(--accent-1); /* Or a color you prefer */
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.instructions-bold {
+    font-weight: 700;
+}
+
+.nutrition-container {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 8px 0px 32px 0px;
+}
+
+.macros {
+    list-style-type: none;
+}
+
+.macros li {
+    margin-bottom: 24px;
+}
+
+.percentage {
+    color: var(--accent-1);
+    font-weight: 600;
+    list-style-type: none;
+}
+
+.percentage li {
+    margin-bottom: 24px;
+}
